@@ -62,7 +62,7 @@ function InfoCard() {
           </div>
         </article>
       </section>
-      <a className="h-10 w-40 grid place-content-center font-medium text-slate-50 rounded-2xl mt-10 mb-12 bg-indigo-400 cursor-pointer hover:bg-indigo-500 dark:bg-emerald-500 dark:hover:bg-emerald-600 transition-colors duration-300">
+      <a href="https://drive.google.com/file/d/1MI1JvMTBu0ZgHKG0hve4Zh1jkwHnTYUG/view?usp=sharing" target="__blank" className="h-10 w-40 grid place-content-center font-medium text-slate-50 rounded-2xl mt-10 mb-12 bg-indigo-400 cursor-pointer hover:bg-indigo-500 dark:bg-emerald-500 dark:hover:bg-emerald-600 transition-colors duration-300">
         Download CV
       </a>
     </motion.section>
