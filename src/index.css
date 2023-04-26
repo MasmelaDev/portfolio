@@ -16,7 +16,7 @@ html {
 }
 #root {
   padding: 30px 10px;
-  @apply bg-white dark:bg-darkGradient text-slate-800 dark:text-gray-100
+  @apply bg-lightGradient dark:bg-darkGradient text-slate-800 dark:text-gray-100
 }
 
 ::-webkit-scrollbar {
