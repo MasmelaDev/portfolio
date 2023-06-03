@@ -4,6 +4,7 @@ import searchgithubuser from "../assets/searchgithubuser.png"
 import todosmachine from "../assets/todosmachine.png"
 import batatabit from "../assets/batatabit.png"
 import rickandmortyapi from "../assets/rickandmortyapi.png"
+import sandcibatta from "../assets/sandcibatta.png"
 import css from "../assets/css.svg"
 import html from "../assets/html.svg"
 import react from "../assets/react.svg"
@@ -19,6 +20,13 @@ const projectsInfo = [
     LiveDemo: "https://masmeladev.github.io/AshMovies/",
     img: ashmovies,
     technologies:[html,css,js]
+  },
+  {
+    name: "Sandcibatta Menu",
+    SourceCode: "",
+    LiveDemo: "https://sandcibatta.netlify.app",
+    img: sandcibatta,
+    technologies:[react,tailwind]
   },
   {
     name: "React Pokedex",
