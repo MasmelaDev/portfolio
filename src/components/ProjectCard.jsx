@@ -19,16 +19,18 @@ function ProjectCard({ project }) {
       >
         <h2 className="text-xl mb-2 font-medium text-center">{project.name}</h2>
         <picture className="flex justify-center items-center w-full h-full rounded-lg overflow-hidden relative">
-        {loading && (
-                    <div className="absolute z-20 w-full h-full animate-pulse bg-gray-300"></div>
-                  )}
+          {loading && (
+            <div className="absolute z-20 w-full h-full animate-pulse bg-gray-300"></div>
+          )}
           <img
-            className={`w-full h-full object-cover ${loading ? "invisible":"visible"}`}
+            className={`w-full h-full object-cover ${
+              loading ? "invisible" : "visible"
+            }`}
             src={project.img}
             alt={project.name}
             onLoad={handleImageLoad}
           />
-          
+
           <div className="flex flex-col items-center justify-evenly absolute z-20 w-full h-full opacity-0 bg-black/70 text-white ease-in duration-300 hover:opacity-100">
             <div className="flex w-full justify-evenly">
               {project.technologies.map((technologie, index) => (
@@ -40,20 +42,21 @@ function ProjectCard({ project }) {
                     className="w-full h-full object-cover"
                     src={technologie}
                     alt="icon"
-                    
                   />
                 </picture>
               ))}
             </div>
             <div className="flex w-full justify-center gap-10">
-              <a
-                className="w-12 h-12 rounded-full ease-in p-1 duration-300 hover:bg-indigo-500 dark:hover:bg-emerald-500 "
-                target="__blank"
-                aria-label="go to source code"
-                href={project.SourceCode}
-              >
-                <BiCodeAlt className="w-full h-full" />
-              </a>
+              {project.SourceCode && (
+                <a
+                  className="w-12 h-12 rounded-full ease-in p-1 duration-300 hover:bg-indigo-500 dark:hover:bg-emerald-500 "
+                  target="__blank"
+                  aria-label="go to source code"
+                  href={project.SourceCode}
+                >
+                  <BiCodeAlt className="w-full h-full" />
+                </a>
+              )}
               <a
                 className="w-12 h-12 rounded-full ease-in p-1 duration-300 hover:bg-indigo-500 dark:hover:bg-emerald-500 "
                 target="__blank"
