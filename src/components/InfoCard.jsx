@@ -1,7 +1,6 @@
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
-import { BsFillTelephoneFill } from "react-icons/bs";
 
-import avatar from "../assets/avatar.png"
+import avatar from "../assets/avatar.webp"
 import { motion } from "framer-motion";
 function InfoCard() {
 
@@ -38,15 +37,7 @@ function InfoCard() {
         </a>
       </section>
       <section className="w-full rounded-2xl flex flex-col divide-y-2 items-center">
-        <article className="flex items-center w-11/12 py-2 sm:p-2 gap-3">
-          <div className="bg-indigo-400 hover:bg-indigo-500 dark:bg-emerald-500 dark:hover:bg-emerald-600 text-white p-2 transition-colors duration-300 rounded-2xl">
-            <BsFillTelephoneFill />
-          </div>
-          <div>
-            <span className="font-light text-sm">Phone</span>
-            <p>+57 321 6033855</p>
-          </div>
-        </article>
+     
         <article className="flex items-center w-11/12 py-2 sm:p-2 gap-3">
           <div className="bg-indigo-400 hover:bg-indigo-500 dark:bg-emerald-500 dark:hover:bg-emerald-600 text-white p-2 transition-colors duration-300 rounded-2xl">
             <AiOutlineMail />

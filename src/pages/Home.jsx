@@ -117,22 +117,22 @@ function Home() {
               Tools
             </h3>
             <ul className="flex flex-wrap justify-center gap-2 mx-auto">
-              <li className="p-2 bg-indigo-400 dark:bg-emerald-500 dark:hover:bg-emerald-600 rounded-xl text-slate-100 hover:bg-indigo-500 transition-all">
+              <li className="p-2 bg-gray-500 rounded-xl text-slate-100">
                 <p>Docker</p>
               </li>
-              <li className="p-2 bg-indigo-400 dark:bg-emerald-500 dark:hover:bg-emerald-600 rounded-xl text-slate-100 hover:bg-indigo-500 transition-all">
+              <li className="p-2 bg-gray-500 rounded-xl text-slate-100">
                 <p>Git</p>
               </li>
-              <li className="p-2 bg-indigo-400 dark:bg-emerald-500 dark:hover:bg-emerald-600 rounded-xl text-slate-100 hover:bg-indigo-500 transition-all">
+              <li className="p-2 bg-gray-500 rounded-xl text-slate-100">
                 <p>Linux</p>
               </li>
-              <li className="p-2 bg-indigo-400 dark:bg-emerald-500 dark:hover:bg-emerald-600 rounded-xl text-slate-100 hover:bg-indigo-500 transition-all">
+              <li className="p-2 bg-gray-500 rounded-xl text-slate-100">
                 <p>Redux Toolkit</p>
               </li>
-              <li className="p-2 bg-indigo-400 dark:bg-emerald-500 dark:hover:bg-emerald-600 rounded-xl text-slate-100 hover:bg-indigo-500 transition-all">
+              <li className="p-2 bg-gray-500 rounded-xl text-slate-100">
                 <p>RTKQuery</p>
               </li>
-              <li className="p-2 bg-indigo-400 dark:bg-emerald-500 dark:hover:bg-emerald-600 rounded-xl text-slate-100 hover:bg-indigo-500 transition-all">
+              <li className="p-2 bg-gray-500 rounded-xl text-slate-100">
                 <p>VScode</p>
               </li>
             </ul>

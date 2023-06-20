@@ -1,19 +1,12 @@
-import React from "react";
 import { Routes, Route } from "react-router";
 import { Home } from "./pages/Home";
 import { Header } from "./components/Header";
 import { InfoCard } from "./components/InfoCard";
-import { ParticlesBackground } from "./components/ParticlesBackground";
 import { Projects } from "./pages/Projects";
 import { motion } from "framer-motion";
 import { Contact } from "./pages/Contact";
 function App() {
-  const [renderParticles, setRenderParticles] = React.useState(false);
-  React.useEffect(() => {
-    setTimeout(() => {
-      setRenderParticles(true);
-    }, 1800);
-  }, [renderParticles]);
+  
   return (
     <>
       <InfoCard />
@@ -31,16 +24,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </motion.main>
-      {renderParticles && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="absolute"
-        >
-          <ParticlesBackground />
-        </motion.div>
-      )}
+      
+   
     </>
   );
 }
