@@ -5,6 +5,7 @@ import todosmachine from "../assets/todosmachine.png"
 import batatabit from "../assets/batatabit.png"
 import rickandmortyapi from "../assets/rickandmortyapi.png"
 import sandcibatta from "../assets/sandcibatta.png"
+import windbnb from "../assets/windbnb.png"
 import css from "../assets/css.svg"
 import html from "../assets/html.svg"
 import react from "../assets/react.svg"
@@ -34,6 +35,13 @@ const projectsInfo = [
     LiveDemo: "https://reactpokedexmiguel.netlify.app/",
     img: pokedex,
     technologies:[react,tailwind,redux]
+  },
+  {
+    name: "Windbnb",
+    SourceCode: "https://github.com/MasmelaDev/Windbnb",
+    LiveDemo: "https://tangerine-cajeta-4d1f55.netlify.app/",
+    img: windbnb,
+    technologies:[react,tailwind]
   },
   {
     name: "GitHub User Searcher",
