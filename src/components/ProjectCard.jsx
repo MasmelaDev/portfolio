@@ -1,14 +1,9 @@
 /* eslint-disable react/prop-types */
-import React from "react";
 import { BiCodeAlt } from "react-icons/bi";
 import { BsEyeFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 function ProjectCard({ project }) {
-  const [loading, setLoading] = React.useState(true);
 
-  const handleImageLoad = () => {
-    setLoading(false);
-  };
   return (
     <>
       <motion.article
@@ -19,16 +14,11 @@ function ProjectCard({ project }) {
       >
         <h2 className="text-xl mb-2 font-medium text-center">{project.name}</h2>
         <picture className="flex justify-center items-center w-full h-full rounded-lg overflow-hidden relative">
-          {loading && (
-            <div className="absolute z-20 w-full h-full animate-pulse bg-gray-300"></div>
-          )}
+ 
           <img
-            className={`w-full h-full object-cover ${
-              loading ? "invisible" : "visible"
-            }`}
+            className={`w-full h-full object-cover`}
             src={project.img}
             alt={project.name}
-            onLoad={handleImageLoad}
           />
 
           <div className="flex flex-col items-center justify-evenly absolute z-20 w-full h-full opacity-0 bg-black/70 text-white ease-in duration-300 hover:opacity-100">
